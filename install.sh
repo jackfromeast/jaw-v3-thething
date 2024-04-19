@@ -34,6 +34,9 @@ sudo apt-get install pigz
 # curl -sSL https://raw.githubusercontent.com/cohesivestack/ineo/v2.1.0/ineo | bash -s install -d $(pwd)/ineo/
 # source ~/.bashrc
 export INEO_HOME=$(pwd)/ineo/; export PATH=$INEO_HOME/bin:$PATH
+sudo ln -s $(pwd)/ineo/bin/ineo /usr/local/bin/ineo
 
 # note: java 11 required with neo4j 4.2.3
 sudo apt-get install openjdk-11-jdk
+
+
